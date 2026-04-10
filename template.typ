@@ -41,7 +41,7 @@
   let formattedName = block(upper(text(2.5em, weight: "bold", theme, name)))
 
   let contactLine = contact.map(c => {
-    if c.link == none [
+    if c.link == none or c.link == "" [
       #c.text
     ] else [
       #link(c.link, text(theme, c.text))
@@ -79,8 +79,12 @@
 //    ]
 //  }
 
-  let parseSubSections(subSections) = {
-    subSections.map(s => {
+let parseSubSections(subSections) = {
+  let seq = subSections
+  if type(subSections) != array {
+    seq = (subSections,)
+  }
+  seq.map(s => {
       [
         #createLeftRight(
           left: secondaryTitle(s.title),
@@ -102,10 +106,15 @@
     }).join()
   }
 
-  let parseSection(section) = {
-    section.map(m => {
+let parseSection(section) = {
+  let seq = section
+  if type(section) != array {
+    seq = (section,)
+  }
+  seq.map(m => {
       [
         #backgroundTitle(m.title)
+        #v(-0.15em)
         #parseSubSections(m.content)
       ]
     }).join()

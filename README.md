@@ -5,3 +5,8 @@ To compile it to pdf, make sure typst is installed. The provided flake.nix and .
 Preview:\
 <img src="assets/images/attractive-typst-resume-blue.png?v=4" width="400px" />
 <img src="assets/images/attractive-typst-resume-green.png?v=4" width="400px" />
+
+
+
+# powershell: typst compile resume.typ
+# typst compile resume_llm.typ
