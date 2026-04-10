@@ -13,7 +13,8 @@
 
 #show: project.with(
   theme: rgb("#0F83C0"),
-  name: "Dr. Venkateshwarlu Sarangi",
+  name: "Venkateshwarlu Sarangi",  
+  nameTitle: "Ph.D",
   contact: (
     contact(
       text: "Hong Kong",
@@ -39,20 +40,22 @@
   ),
 
   main: (
-    section(
-      title: "Professional Summary",
-      content: (
-        subSection(
-          content: [
-            AI/ML Engineer & Data Scientist with *10+ years of research and applied data science experience* and a Ph.D. in Materials Science. Specialized in *Machine Learning, Deep Learning, LLM applications, and end‑to‑end AI system development*. Proven track record of deploying predictive models, applying advanced statistical methods, and delivering production‑ready AI solutions. Strong foundation in *mathematics, statistics, and model optimization* with experience across research and industry collaborations.
-          ],
-        ),
-      ),
-    ),
+  section(
+  title: "Professional Summary",
+  content: (
     
-    section(
-      title: "Technical Skills",
+    subSection(
+      content: [
+        AI/ML Engineer & Data Scientist with *10+ years of research and applied data science experience* and a Ph.D. in Materials Science and Engineering. Specialized in *Machine Learning, Deep Learning, LLM applications, and end‑to‑end AI system development*. Proven track record of deploying predictive models, applying advanced statistical methods, and delivering production‑ready AI solutions. Strong foundation in *mathematics, statistics, and model optimization* with experience across research and industry collaborations.
+      ],
+    ),
+    ),
+  ),
+  
+  section(
+    title: "Technical Skills",
       content: (
+        
         subSection(
           content: [
         *LLM Optimization & Adaptation:* PEFT, LoRA/QLoRA,Supervised Fine-Tuning (SFT), instruction tuning, Knowledge Distillation, Direct Preference Optimization (DPO), RLHF pipelines, quantization (INT8/4-bit), KV-cache optimization, throughput & latency optimization for scalable inference\ 
@@ -74,11 +77,11 @@
       title: "LLM & Machine Learning Projects",
       content: (
         subSection(
-          title: "LLM-Based Intelligent Query Assistant",
-          titleEnd: "Personal Project",
-          subTitleEnd: "(2025)",
+          title: "END to end Scratch small LLM Development",
+          titleEnd: "Capstone Project",
+          subTitleEnd: "(2026)",
           content: list(
-            [Designed and implemented a *Retrieval-Augmented Generation (RAG)* pipeline using vector embeddings for contextual document querying.],
+            [*Building, Fine-Tuning & Deploying Chatbot and Intelligent Classifier*.],
             [Integrated LLM APIs with semantic search to enable natural-language interaction over structured and unstructured data.],
             [Implemented prompt optimization and response evaluation strategies to improve accuracy and hallucination control.],
             [Containerized deployment using Docker for scalable inference workflows.]
@@ -87,7 +90,7 @@
 
         subSection(
           title: "Breast Cancer Diagnosis Prediction",
-          titleEnd: "Machine Learning Project",
+          titleEnd: "Capstone Project",
           subTitleEnd: "(2025)",
           content: list(
             [Built a Logistic Regression classifier using the Breast Cancer Wisconsin dataset achieving *>98% accuracy*.],
@@ -105,8 +108,8 @@
                
       (
         subSection(
-          title: "Research Associate (AI & Data Modeling)",
-          titleEnd: "HKUST & Gense Technologies Ltd, Hong Kong",
+          title: "Research Associate (Fabrication & Data Modeling)",
+          titleEnd: "HKUST & Gense Technologies Ltd, HK",
           subTitleEnd: "(2024 – July 2025)",
           content: [
             *AI / Applied Machine Learning / Biomedical Data*
@@ -121,8 +124,8 @@
         ),
 
         subSection(
-          title: "Postdoctoral Researcher (AI-driven Signal Analysis)",
-          titleEnd: "City University of Hong Kong & Gense Technologies Ltd",
+          title: "Postdoctoral Researcher (Fabrication & Signal Analysis)",
+          titleEnd: "CityU HK & Gense Technologies Ltd, HK",
           subTitleEnd: "(2022 – 2024)",
           content: list(
             [Designed signal enhancement and impedance analysis models for ECG and EIT biomedical datasets, improving signal-to-noise ratio and diagnostic reliability.],
@@ -133,8 +136,8 @@
         ),
 
         subSection(
-          title: "Ph.D. Researcher – Data Modeling & Computational Analysis",
-          titleEnd: "City University of Hong Kong",
+          title: "Ph.D. Researcher (Materials Science)",
+          titleEnd: "CityU HK",
           subTitleEnd: "(2015 – 2021)",
           content: list(
             [Applied advanced statistical and computational modeling for material structure analysis using X-ray and neutron diffraction datasets.],
@@ -145,27 +148,64 @@
         ),
       ),
     ),
-
     
-
     
+   section(
+    title: "Training & Certifications",
+    content: (
+      subSection(
+        content: list(
+          [*Generative AI with Large Language Models (LLMs)*],
+          [DeepLearning.AI & Amazon Web Services | Coursera | February 2026],
+          [Skills: Transformers · NLP · Reinforcement Learning · Prompt Engineering · Generative Model Architectures · Model Evaluation · PyTorch · PEFT · LoRA · RAG · Fine-tuning · LangChain · LangGraph · LangSmith · GenerativeAI],
+        ),
+      ),
+
+    subSection(
+      content: list(
+        [*Deep Learning*],
+        [Stanford University & DeepLearning.AI | Coursera | January 2026],
+        [Skills: Neural Networks (NN) · Convolutional Neural Networks (CNN) · Computer Vision (CV) · Recurrent Neural Networks (RNN) · LSTMs · Transformers · NLP · Reinforcement Learning],
+      ),
+    ),
+
+    subSection(
+      content: list(
+        [*Machine Learning*],
+        [Stanford University & DeepLearning.AI | Coursera | August 2025],
+        [Skills: Linear & Logistic Regression · Neural Networks · Recommender Systems · Reinforcement Learning],
+      ),
+    ),
+
+    subSection(
+      content: list(
+        [*Mathematics for Machine Learning*],
+        [Imperial College London | Coursera | September 2025],
+        [Skills: Linear Algebra · Multivariate Calculus · Dimensionality Reduction · Principal Component Analysis · Statistics · Derivatives · Advanced Mathematics · Machine Learning Algorithms],
+      ),
+    ),
+
+    subSection(
+      content: list(
+        [*Python 3 Programming Specialization*],
+        [University of Michigan | Coursera | December 2025],
+        [Skills: Debugging · Data Structures · Unit Testing · Image Analysis · Data Manipulation · Software Design · Object Oriented Programming (OOP) · Data Processing · Data Import/Export · File I/O · Web Scraping · REST API],
+       ),
+     ),
+   ),
+ ),
+
 
     section(
       title: "Education",
       content: (
         subSection(
-          title: "Ph.D. – Materials Science and Engineering",
-          titleEnd: "City University of Hong Kong",
-          subTitle: "",
-          subTitleEnd: "(2021)",
-          content: [],
+          title: "Ph.D. Materials Science and Eng,    City University of Hong Kong, (2021)",
+         
         ),
         subSection(
-          title: "M.Tech – Materials Science and Engineering",
-          titleEnd: "IIT Bombay, India",
-          subTitle: "",
-          subTitleEnd: "(2013)",
-          content: [],
+          title: "M.Tech. Materials Science and Eng,    IIT Bombay, India, (2013)",
+                  
         ),
       ),
     ),
