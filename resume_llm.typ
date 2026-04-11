@@ -58,14 +58,14 @@
         
         subSection(
           content: [
-        *LLM Optimization & Adaptation:* PEFT, LoRA/QLoRA,Supervised Fine-Tuning (SFT), instruction tuning, Knowledge Distillation, Direct Preference Optimization (DPO), RLHF pipelines, quantization (INT8/4-bit), KV-cache optimization, throughput & latency optimization for scalable inference\ 
+        *LLM Optimization & Adaptation:* PEFT, LoRA/QLoRA, Supervised Fine-Tuning (SFT), Instruction tuning, Knowledge Distillation, Direct Preference Optimization (DPO), RLHF pipelines, quantization (INT8/4-bit), KV-cache optimization, throughput & latency optimization for scalable inference\ 
         *Evaluation & Monitoring:* LLM evaluation frameworks, response scoring, guardrails\
         *LLM Application Development:* Retrieval-Augmented Generation (RAG), Agentic Workflows, Tool Calling, Function Calling\
         *Context Engineering & Agentic Systems:* Structured prompt architecture, dynamic retrieval augmentation, chain-of-thought & tool-augmented reasoning, memory management, guardrails, output validation, hallucination mitigation & evaluation pipelines\
         *Vector Databases:* FAISS, Pinecone, Weaviate, Chroma\
         *Embeddings & Semantic Search:* Text embeddings, similarity search, hybrid retrieval\
         *Frameworks:* LangChain, LlamaIndex, OpenAI SDK, HuggingFace Transformers\
-        *Deployment:* FastAPI, Docker, Kubernetes, scalable inference APIs\
+        *Deployment:* On-Prime, vLLM, Edge-Devices,  FastAPI, Docker, Kubernetes, scalable inference APIs\
         *MLOps for LLMs:* CI/CD for models, model versioning, experiment tracking, drift detection\
         *Cloud Platforms:* AWS (Bedrock, SageMaker), Azure AI, GCP Vertex AI
           ],
@@ -200,11 +200,11 @@
       title: "Education",
       content: (
         subSection(
-          title: "Ph.D. Materials Science and Eng,    City University of Hong Kong, (2021)",
+          title: "Ph.D. Materials Science and Eng,    City University of Hong Kong, (Oct, 2021)",
          
         ),
         subSection(
-          title: "M.Tech. Materials Science and Eng,    IIT Bombay, India, (2013)",
+          title: "M.Tech. Materials Science and Eng,    IIT Bombay, India, (June, 2013)",
                   
         ),
       ),
