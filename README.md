@@ -10,3 +10,4 @@ Preview:\
 
 # powershell: typst compile resume.typ
 # typst compile resume_llm.typ
+# typst compile Sarangi_resume_llm.typ

@@ -46,7 +46,7 @@
     
     subSection(
       content: [
-        AI/ML Engineer & Data Scientist with *10+ years of research and applied data science experience* and a Ph.D. in Materials Science and Engineering. Specialized in *Machine Learning, Deep Learning, LLM applications, and end‑to‑end AI system development*. Proven track record of deploying predictive models, applying advanced statistical methods, and delivering production‑ready AI solutions. Strong foundation in *mathematics, statistics, and model optimization* with experience across research and industry collaborations.
+        AI/ML Engineer & Data Scientist with *10+ years of research and applied data science experience* and a Ph.D. in Physics (Materials Science and Eng). Specialized in *Machine Learning, Deep Learning, NLP, LLM Fine-tuning, and end‑to‑end AI system development*. Proven track record of deploying predictive models, applying advanced statistical methods, and delivering production‑ready AI solutions. Strong foundation in *mathematics, statistics, and model optimization* with experience across research and industry collaborations.
       ],
     ),
     ),
@@ -58,45 +58,41 @@
         
         subSection(
           content: [
-        *LLM Optimization & Adaptation:* PEFT, LoRA/QLoRA, Supervised Fine-Tuning (SFT), Instruction tuning, Knowledge Distillation, Direct Preference Optimization (DPO), RLHF pipelines, quantization (INT8/4-bit), KV-cache optimization, throughput & latency optimization for scalable inference\ 
+        *LLM Optimization & Adaptation:* Supervised Fine-Tuning (SFT), Instruction tuning, PEFT, LoRA/QLoRA,  Knowledge Distillation, Direct Preference Optimization (DPO), GRPO, RLHF, MoE pipelines, quantization (INT8/4-bit), KV-cache optimization, throughput & latency optimization for scalable inference\ 
         *Evaluation & Monitoring:* LLM evaluation frameworks, response scoring, guardrails\
-        *LLM Application Development:* Retrieval-Augmented Generation (RAG), Agentic Workflows, Tool Calling, Function Calling\
-        *Context Engineering & Agentic Systems:* Structured prompt architecture, dynamic retrieval augmentation, chain-of-thought & tool-augmented reasoning, memory management, guardrails, output validation, hallucination mitigation & evaluation pipelines\
-        *Vector Databases:* FAISS, Pinecone, Weaviate, Chroma\
-        *Embeddings & Semantic Search:* Text embeddings, similarity search, hybrid retrieval\
-        *Frameworks:* LangChain, LlamaIndex, OpenAI SDK, HuggingFace Transformers\
-        *Deployment:* On-Prime, vLLM, Edge-Devices,  FastAPI, Docker, Kubernetes, scalable inference APIs\
-        *MLOps for LLMs:* CI/CD for models, model versioning, experiment tracking, drift detection\
-        *Cloud Platforms:* AWS (Bedrock, SageMaker), Azure AI, GCP Vertex AI
+        *Deployment:* On-Prime, vLLM,Paged-Attention, Edge-Devices,  FastAPI, Docker, Kubernetes, scalable inference APIs\
+        *MLOps for LLMs:* CI/CD for models, model serving, versioning, experiment tracking, drift detection\
+        *Cloud Platforms:* AWS (Bedrock, SageMaker), Azure AI, GCP Vertex AI\
           ],
         ),
       ),
     ),
 
   section(
-      title: "LLM & Machine Learning Projects",
+      title: "Capstone Projects: Small Language Model (SLM) Projects",
       content: (
         subSection(
-          title: "END to end Scratch small LLM Development",
+          title: "END to End Scratch Small Language Model (SLM) Development:",
           titleEnd: "Capstone Project",
-          subTitleEnd: "(2026)",
+          subTitleEnd: "(Jan,2026)",
           content: list(
-            [*Building, Fine-Tuning & Deploying Chatbot and Intelligent Classifier*.],
-            [Integrated LLM APIs with semantic search to enable natural-language interaction over structured and unstructured data.],
-            [Implemented prompt optimization and response evaluation strategies to improve accuracy and hallucination control.],
-            [Containerized deployment using Docker for scalable inference workflows.]
+            [*Building, Fine-Tuning GPT-2 (124M) & Deploying Chatbot and Intelligent Classifier.*],
+            [Built a GPT-2 124M text classification pipeline from scratch.],
+            [Balanced the SMS spam dataset and trained a classification head with strong validation results.],
+            [Created a reusable Streamlit demo with checkpoint export and easy extension to finance, fraud, and sentiment tasks.],
+            [Demonstrated production-style ML engineering, disciplined training, and deployment-ready thinking.]
           ),
         ),
 
         subSection(
-          title: "Breast Cancer Diagnosis Prediction",
+          title: "LoRA Fine-Tune Small Language Model (SLM) FLAN-T5-Base(247M):",
           titleEnd: "Capstone Project",
-          subTitleEnd: "(2025)",
-          content: list(
-            [Built a Logistic Regression classifier using the Breast Cancer Wisconsin dataset achieving *>98% accuracy*.],
-            [Performed EDA, feature scaling, hyperparameter tuning, and validation using cross‑validation techniques.],
-            [Created Power BI dashboards for performance visualization and interpretability.],
-            [*Technologies:* Python, Scikit-learn, Pandas, Seaborn, SQL]
+          subTitleEnd: "(March,2026)",
+          content: list(                
+            [*Production-grade LoRA fine-tuning pipeline for FLAN-T5-Base (247M params) on DialogSum dataset.*],
+            [Achieving ROUGE-1 ~41.8% via Optuna HPO.],
+            [Compares zero-shot, full fine-tune (42% ROUGE-1), and LoRA (30-41% ROUGE-1, 94% param efficiency).],
+            [Served merged model (~500MB) + LoRA adapter (28MB) for Streamlit.app.]
           ),
         ),
       ),
@@ -134,6 +130,8 @@
             [*Technologies:* Python, NumPy, Scikit-learn, Pandas, Power BI, Tableau]
           ),
         ),
+
+
 
         subSection(
           title: "Ph.D. Researcher (Materials Science)",
