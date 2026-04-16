@@ -68,19 +68,19 @@ main: (
       title: "Capstone Projects: Small Language Model (SLM) Projects",
       content: (
         subSection(
-          title: "SLM Engineer:",
+          title: "END to End Scratch Small Language Model (SLM) Development:",
           titleEnd: "Capstone Project",
           subTitleEnd: "(Jan,2026)",
           content: list(
-            [*End to End Building LLM from Scratch, Fine-Tuning GPT-2 (124M) & Deploying.*],
-            [Built a GPT-2 124M text classification pipeline from scratch end to end layers.],
-            [Data Balanced the SMS spam dataset and trained a classification head with strong validation results.],
+            [*Building, Fine-Tuning GPT-2 (124M) & Deploying Chatbot and Intelligent Classifier.*],
+            [Built a GPT-2 124M text classification pipeline from scratch.],
+            [Balanced the SMS spam dataset and trained a classification head with strong validation results.],
             [Created a reusable Streamlit demo with checkpoint export and easy extension to finance, fraud, and sentiment tasks.],
             [Demonstrated production-style ML engineering, disciplined training, and deployment-ready thinking.]
           ),
         ),
         subSection(
-          title:  "LoRA Fine-Tuning Engineer:",
+          title: "LoRA Fine-Tune Small Language Model (SLM) FLAN-T5-Base(247M):",
           titleEnd: "Capstone Project",
           subTitleEnd: "(March,2026)",
           content: list(
@@ -119,12 +119,10 @@ main: (
           content: [
             *Materials Science / Computational Modeling / Data Analysis*
             #list(
-              [Designed piezoelectric electrodes, applied advanced statistical and computational modeling for material structure analysis using X-ray and neutron diffraction datasets.],
-              [Performed *Rietveld refinement and regression-based parameter optimization, fine-tuning methods* to extract structural insights from complex datasets.],
-              [Published research in *Nature Communications, Communications Physics, Physical Review B, Scientific Reports*, and other high-impact journals(Google Scholar).],
-              [*Technologies:*  FullProf and GSAS-II for structural analysis(GUIs) and Pair Distribution Function (PDF) analysis, Python, MATLAB, OriginLab, Scikit-learn, Statistical Modeling.], 
-                                                                             
-                                                                                            
+              [Applied advanced statistical and computational modeling for material structure analysis using X-ray and neutron diffraction datasets.],
+              [Performed *Rietveld refinement and regression-based parameter optimization* to extract structural insights from complex datasets.],
+              [Published research in *Nature Communications, Communications Physics, Physical Review B, Scientific Reports*, and other high-impact journals.],
+              [*Technologies:* Python, MATLAB, OriginLab, Scikit-learn, Statistical Modeling]
             )
           ],
         ),
@@ -137,19 +135,19 @@ main: (
           content: list(
             [*Generative AI with Large Language Models (LLMs)*],
             [DeepLearning.AI & Amazon Web Services | Coursera | February 2026],
-            [Skills: Transformers · NLP · Reinforcement Learning · Prompt Engineering · Generative Model Architectures · Model Evaluation · PyTorch · LLM · PEFT · LoRA / QLoRa · RAG · Fine-tuning · LangChain · LangGraph · LangSmith · Generative AI],
+            [Skills: Transformers · NLP · Reinforcement Learning · Prompt Engineering · Generative Model Architectures · Model Evaluation · PyTorch · PEFT · LoRA · RAG · Fine-tuning · LangChain · LangGraph · LangSmith · GenerativeAI],
           ),
         ),
         subSection(
           content: list(
-            [*Deep Learning Specialization*],
+            [*Deep Learning*],
             [Stanford University & DeepLearning.AI | Coursera | January 2026],
             [Skills: Neural Networks (NN) · Convolutional Neural Networks (CNN) · Computer Vision (CV) · Recurrent Neural Networks (RNN) · LSTMs · Transformers · NLP · Reinforcement Learning],
           ),
         ),
         subSection(
           content: list(
-            [*Machine Learning Specialization*],
+            [*Machine Learning*],
             [Stanford University & DeepLearning.AI | Coursera | August 2025],
             [Skills: Linear & Logistic Regression · Neural Networks · Recommender Systems · Reinforcement Learning],
           ),
@@ -174,22 +172,14 @@ main: (
       title: "Education",
       content: (
         subSection(
-          title: " ",
-          titleEnd: "IIT Bombay  and CityU HK,",
-          subTitleEnd: " ",
-          content: [
-            #list(
-              [Ph.D. Materials Science and Eng,    City University of Hong Kong, (Oct, 2021)],
-              [M.Tech. Materials Science and Eng,    IIT Bombay, India, (June, 2013)],
-              ),
-          ],
+          title: "Ph.D. Materials Science and Eng,    City University of Hong Kong, (Oct, 2021)",
         ),
-        
-        
+        subSection(
+          title: "M.Tech. Materials Science and Eng,    IIT Bombay, India, (June, 2013)",
+        ),
       ),
     ),
   ),
 
   sidebar: (),
 )
-
