@@ -140,9 +140,19 @@ main: (
             [Skills: Transformers · NLP · Reinforcement Learning · Prompt Engineering · Generative Model Architectures · Model Evaluation · PyTorch · LLM · PEFT · LoRA / QLoRa · RAG · Fine-tuning · LangChain · LangGraph · LangSmith · Generative AI],
           ),
         ),
+
         subSection(
           content: list(
-            [*Deep Learning Specialization*],
+            [*End-to-End MLOps Bootcamp*],
+            [Self-Directed Industry Pipeline | Python → Production Deployment | Udemy | April 2026],
+            [Skills: Python · Git/GitHub · Docker · MLflow · DVC · DagsHub · Apache Airflow/Astro · GitHub Actions CI/CD · ETL Pipelines · End-to-End ML/NLP Projects · AWS SageMaker · GenAI Deployment · Grafana, · PostgreSQL, · Monitoring, Alerting, · Model Versioning, · Experiment Tracking, · Terraform,· Kubernetes, · FastAPI, · jenkins, · Streamlit],
+          ),
+        ),
+
+
+        subSection(
+          content: list(
+            [*Deep Learning and NLP Specialization*],
             [Stanford University & DeepLearning.AI | Coursera | January 2026],
             [Skills: Neural Networks (NN) · Convolutional Neural Networks (CNN) · Computer Vision (CV) · Recurrent Neural Networks (RNN) · LSTMs · Transformers · NLP · Reinforcement Learning],
           ),
@@ -154,20 +164,8 @@ main: (
             [Skills: Linear & Logistic Regression · Neural Networks · Recommender Systems · Reinforcement Learning],
           ),
         ),
-        subSection(
-          content: list(
-            [*Mathematics for Machine Learning*],
-            [Imperial College London | Coursera | September 2025],
-            [Skills: Linear Algebra · Multivariate Calculus · Dimensionality Reduction · Principal Component Analysis · Statistics · Derivatives · Advanced Mathematics · Machine Learning Algorithms],
-          ),
-        ),
-        subSection(
-          content: list(
-            [*Python 3 Programming Specialization*],
-            [University of Michigan | Coursera | December 2025],
-            [Skills: Debugging · Data Structures · Unit Testing · Image Analysis · Data Manipulation · Software Design · Object Oriented Programming (OOP) · Data Processing · Data Import/Export · File I/O · Web Scraping · REST API],
-          ),
-        ),
+        
+      
       ),
     ),
     section(
@@ -180,16 +178,15 @@ main: (
           content: [
             #list(
               [Ph.D. Materials Science and Eng,    City University of Hong Kong, (Oct, 2021)],
-              [M.Tech. Materials Science and Eng,    IIT Bombay, India, (June, 2013)],
-              ),
-          ],
-        ),
+              [M.Tech. Materials Science and Eng,    IIT Bombay, India, (June, 2013)]
+              )
+          ]
+        )
         
         
-      ),
-    ),
+      )
+    )
   ),
 
-  sidebar: (),
+  sidebar: ()
 )
-
