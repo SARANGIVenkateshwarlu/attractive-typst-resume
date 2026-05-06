@@ -1,0 +1,19 @@
+("Project, AI& ML Engineer Role, Skills,Outcome") 
+Built an explainable deep learning model for 12-lead ECG arrhythmia classification, addressing challenges from non-stationary signals and inter-patient variability.
+Evaluated multiple deep learning architectures including ResNet34, ResNet50, DenseNet, and VGG16 for multiclass healthcare prediction tasks.
+Achieved strong model performance with ResNet34, reaching AUROC 0.98 and F1-score 0.826 across nine arrhythmia categories.
+Developed a hybrid modeling approach by combining raw ECG signals with HRV features to investigate performance improvements in medical AI classification.
+Applied SHAP-based explainable AI to identify influential ECG leads and critical signal regions, improving model interpretability for clinical decision support.
+
+--
+Data Scientist  
+Conducted physics-based simulation and data analysis using COMSOL Multiphysics to study material flexibility, stress distribution, hardness, and structural behavior.
+Performed materials data preprocessing, cleaning, and refinement using MATLAB and Python basic libraries to improve analysis quality and model readiness.
+Applied supervised learning and statistical modeling techniques to analyze material properties, identify trends, and support predictive insights.
+Improved simulation and analytical workflows through iterative model refinement, results evaluation, and reliability analysis for engineering and materials-focused projects.
+
+("Project, AI& ML Engineer Role, Skills, Outcome") 
+
+
+: lishuai.li@cityu.edu.hk : https://lishuailigroup.com/
+https://www.cityu.edu.hk/hro/en/job/current/research.asp?ref=ur-t05825

@@ -57,9 +57,10 @@ main: (
           content: [
             *LLM Optimization & Adaptation:* Supervised Fine-Tuning (SFT), Instruction tuning, PEFT, LoRA/QLoRA, Knowledge Distillation, Direct Preference Optimization (DPO), GRPO, RLHF, MoE pipelines, quantization (INT8/4-bit), KV-cache optimization, throughput & latency optimization for scalable inference\ 
             *Evaluation & Monitoring:* LLM evaluation frameworks, response scoring, guardrails\
-            *Deployment:* On-Prime, vLLM, Paged-Attention, Edge-Devices, FastAPI, Docker, Kubernetes, scalable inference APIs\
+            *Deployment:* On-Prime, vLLM, Unsloth, TGI, Paged-Attention, Edge-Devices, FastAPI, Docker, Kubernetes, scalable inference APIs\
             *MLOps for LLMs:* CI/CD for models, model serving, versioning, experiment tracking, drift detection\
-            *Cloud Platforms:* AWS (Bedrock, SageMaker), Azure AI, GCP Vertex AI\
+            *Cloud Platforms:* AWS (Bedrock, SageMaker), Azure AI, GCP Vertex AI, Alibaba Cloud \
+            *Code & Tools:* Kimi-Code, GitHub Copilot, Claude Code, OpenCode, Cursor,HuggingFace, Optuna, Streamlit, LightningAI, RunPOD, Weights & Biases.\
           ],
         ),
       ),
@@ -93,7 +94,7 @@ main: (
       ),
     ),
     section(
-      title: "Research Experience",
+      title: "Data Scientist and Biomaterials Research Experience",
       content: (
         subSection(
           title: "Research Associate",
@@ -129,7 +130,23 @@ main: (
           ],
         ),
       ),
-    ),
+    ),  
+        subSection(
+          title: "Ph.D. Researcher in Materials Sci & Eng",
+          titleEnd: "CityU HK",
+          subTitleEnd: "(2015 – 2021)",
+          content: [
+            *Materials Science / Computational Modeling / Data Analysis*
+            #list(
+              [Designed piezoelectric electrodes, applied advanced statistical and computational modeling for material structure analysis using X-ray and neutron diffraction datasets.],
+              [Performed *Rietveld refinement and regression-based parameter optimization, fine-tuning methods* to extract structural insights from complex datasets.],
+              [Published research in *Nature Communications, Communications Physics, Physical Review B, Scientific Reports*, and other high-impact journals(Google Scholar).],
+              [*Technologies:*  FullProf and GSAS-II for structural analysis(GUIs) and Pair Distribution Function (PDF) analysis, Python, MATLAB, OriginLab, Scikit-learn, Statistical Modeling.], 
+                                                                             
+                                                                                            
+            )
+          ],
+        ),
     section(
       title: "Training & Certifications",
       content: (
