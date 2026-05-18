@@ -16,3 +16,7 @@ Preview:\
 
 Resume_AI_Engineer_SARANGI
 typst compile Resume_AI_Engineer_SARANGI.typ
+typst compile Resume_S_AI_Engineer_SARANGI.typ
+typst compile Resume_llm_SARANGI.typ
+typst compile Resume_DataScientist_SARANGI.typ
+

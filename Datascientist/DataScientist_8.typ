@@ -44,7 +44,9 @@ main: (
       content: (
         subSection(
           content: [
-              AI/ML Engineer & LLM Specialist with *10+ years of research and applied data science experience* and a Ph.D. in Physics. Expert in LLM fine-tuning, multimodal RAG systems, and production *MLOps/LLMOps.* Combines deep scientific rigor with practical AI deployment—specializing in domain-specific small-language model (SLM) optimization, RAG-systems, Vision-Language Model (VLM) integration, and end-to-end AI system architecture. Proven track record of translating complex research into scalable, production-ready solutions across industry and academic collaborations.
+              
+               Results-driven AI Engineer with a Ph.D. in Physics, materials science, and computational chemistry  and 4+ years of industry experience designing agentic AI workflows, multimodal RAG pipelines, and production LLM systems. Expert in task planning, tool-using agents, memory management, and retrieval-augmented generation using LangChain, LangGraph, and vector databases (FAISS, Pinecone, Chroma, Weaviate). Proven ability to build secure REST API integrations, implement observability and monitoring, and deploy scalable solutions on AWS/GCP with Docker, MLflow, and CI/CD. Strong track record delivering high-performance models (0.98 AUROC, 87% sensitivity) while collaborating with cross-functional teams and supporting client onboarding.
+              
           ],
         ),
       ),
@@ -54,17 +56,14 @@ main: (
       content: (
         subSection(
           content: [
-            *Machine Learning & Data Science:* Supervised/Unsupervised Learning, Feature Engineering, Model Selection &      Validation, Hyperparameter Optimization, Time Series Forecasting, Anomaly Detection, Statistical Modeling, Scikit-learn, XGBoost, LightGBM.\
-            *RAG & Information Retrieval:* Dense/Sparse Retrieval, Vector DBs (Chroma, FAISS, Pinecone, Weaviate, Milvus), Re-ranking & Hybrid Search, Embedding Models, Query Expansion, Document Chunking & Preprocessing, Grounding & Hallucination Detection, Evaluation Metrics.\
-            *MLOps & Infrastructure:* Docker, Kubernetes (K8s), Helm; CI/CD (GitHub Actions, Jenkins, GitLab CI); Terraform; MLflow, DVC, Weights & Biases; Monitoring (Prometheus, Grafana, Evidently); Feature Stores (Feast, Tecton); A/B Testing & Experimentation; Blue-Green & Canary Deployments; Model Registry & Versioning.\
-            *Cloud Platforms:* AWS (SageMaker, EC2, EKS, S3, Lambda), Azure Machine Learning, GCP Vertex AI; Serverless & Edge Deployment.\
-            *Development & Tooling:* Python, PyTorch, NumPy, Pandas; FastAPI, Flask; Git, GitHub; Streamlit, Gradio (Prototyping); SQL, Spark, Airflow (Data Pipelines).\
+                         
+              Python, LangChain, LangGraph, LlamaIndex, RAG Systems, Vector Databases (FAISS, Pinecone, Chroma, Weaviate), Agentic AI & Tool-using Agents, Prompt Engineering & Memory Management, REST API Integration & OAuth, AWS SageMaker & GCP Vertex AI, Docker & Kubernetes, MLOps & MLflow & CI/CD Pipelines, Monitoring & Observability, PyTorch & TensorFlow,  RESTful API Integration.\ 
             
-          ],
+           ],
         ),
       ),
     ),
-
+     
        
     section(
       title: "Work Experience",
@@ -79,23 +78,29 @@ main: (
               [Built an explainable deep learning model for 12-lead *ECG arrhythmia classification,* addressing challenges from non-stationary signals and inter-patient variability.],
               [Evaluated multiple *deep learning and vision architectures* including ResNet34, ResNet50, DenseNet, and VGG16, *Vision Transformers (ViT) and Vision-Language Models (VLMs),* multimodal AI systems for healthcare prediction tasks.],
               [Achieved strong model performance with ResNet34, reaching *AUROC 0.98 and F1-score 0.826* across nine arrhythmia categories.],
+              [Technologies: Python, PyTorch, Scikit-learn, and TensorFlow.],
             )
           ],
         ),
+
         subSection(
-          title: "Bio-material Engineer & Data Scientist",
+          title: "Data Scientist & Research Engineer",
           titleEnd: "Gense Technologies Ltd, HK",
           subTitleEnd: "(Oct, 2022 – Aug, 2025)",
           content: [
-            *Biomedical Systems & Signal Intelligence*
+            *Projects & Technical Experience*
             #list(
-              [Bio-electrodes design—Software Integration: *Architected dry electrode systems* and phantom prototypes for *EIT/ECG imaging*; *achieved 100%* improvement in contact impedance without conductive gels, directly enhancing signal fidelity and diagnostic reliability.],
-              [Signal Processing & Enhancement: Developed and validated impedance analysis models and signal enhancement pipelines for biomedical datasets; *improved SNR and diagnostic quality* through algorithmic filtering and statistical optimization.],
-              [Predictive Modeling: Implemented regression *(linear, polynomial, nonlinear)* and pattern extraction algorithms for predictive analytics across biomedical time-series data.],
-              [Image Reconstruction & Validation: Built end-to-end algorithmic pipelines for *EIT image reconstruction* accuracy, applying statistical validation frameworks to quantify model performance.],
-              [*Technologies:* Python, NumPy, Scikit-learn, Pandas; Power BI, Tableau, SQL; Impedance Analyzer.], 
+                            
+              [Designed and deployed end-to-end supervised learning pipelines with ML models for clinical prediction tasks, achieving *87% sensitivity* and *>99% specificity* on imbalanced biomedical datasets.],
+              [Engineered feature extraction and signal processing workflows using Python (NumPy, Pandas, Scikit-learn) to improve SNR and diagnostic quality in time-series bio-conductivity data.],
+              [Achieved a *100% improvement* in skin electrode contact impedance without conductive gels, improving signal sensitivity.],
+              [Developed and validated signal enhancement and impedance analysis models for ECG and EIT datasets, improving signal-to-noise ratio and diagnostic reliability.],
+              [Built automated MLOps workflows with Docker, CI/CD, and MLflow for experiment tracking, model versioning, and reproducible deployments across cloud environments. Applied statistical validation frameworks (k-fold cross-validation, ROC-AUC optimization, hypothesis testing) to ensure diagnostic-grade model reliability and regulatory compliance.],
+              [Developed synthetic data augmentation strategies (SMOTE, bootstrapping) to address limited clinical datasets, improving model *generalization by 20%*.],
+              [Proficient in Python, SQL, PyTorch, Scikit-learn, and cloud ML platforms (GCP, Firebase, AWS SageMaker) for scalable production systems.],
+                            
             )
-          ],
+          ]
         ),
         subSection(
           title: "Data Scientist and Computational Analyst",
@@ -104,29 +109,35 @@ main: (
           content: [
             *Materials Science & Computational Modeling*
             #list(
-              [Conducted physics-based simulation and data analysis using *COMSOL Multiphysics* to study material flexibility (>90%), stress distribution, hardness, and structural behavior.],
-              [Performed materials *data preprocessing,* cleaning, and refinement using MATLAB and Python basic libraries to improve analysis quality and model readiness.],
-              [Applied *supervised learning and statistical modeling* techniques to analyze material properties, identify trends, and support predictive insights.],
-              [Improved simulation and analytical workflows through *iterative model refinement, results evaluation,* and reliability analysis for engineering and materials-focused projects.],
-              [*Technologies:* Python, NumPy, Pandas, Scikit-learn, OriginLab, Statistical Modeling.],
+             
+            [Applied supervised learning and statistical modeling techniques to analyze material properties, identify trends, and support predictive insights.],
+            [Conducted physics-based simulation and data analysis using COMSOL Multiphysics to study material flexibility (>90%), stress distribution, hardness, and structural behavior.],
+            [Performed materials data preprocessing, cleaning, and refinement using MATLAB and Python basic libraries to improve analysis quality and model readiness.],
+            [Improved simulation and analytical workflows through iterative model refinement, results evaluation, and reliability analysis for engineering and materials-focused projects.],
+            [*Technologies:* Python, Data processing, Feature Engineering, EDA,NumPy, Pandas, Scikit-learn, OriginLab, SQL, Power BI, &Statistical Modeling.],
+
             )
-          ],                                                                                          
+          ]                                                                                          
         ),  
+
         subSection(
           title: "Ph.D Research Scholar",
           titleEnd: "CityU HK",
           subTitleEnd: "(August, 2015 – October 2021)",
           content: [
-            *Materials Science / Computational Modeling / Data Analysis*
+            *Materials Engineering / Computational Modeling / Data Analysis*
             #list(
-              [Designed piezoelectric electrodes, applied advanced statistical and computational modeling for material structure analysis using X-ray and neutron diffraction datasets.],
-              [Performed *Rietveld refinement and data processing, feature engineering, and regression-based parameter optimization, fine-tuning methods, hyperparameter tuning* to extract structural insights from complex datasets.],
-              [Published research in *Nature Communications, Communications Physics, Physical Review B, Scientific Reports*, and other high-impact journals (Google Scholar).],
-              [*Technologies:* FullProf and GSAS-II for structural analysis (GUIs) and Pair Distribution Function (PDF) analysis, Python, MATLAB, OriginLab, Scikit-learn, Statistical Modeling.],
+              [Architected piezoelectric electrodes *Large electrostrains of 0.2%* and integrated AI-driven computational modeling for material structure analysis using X-ray and neutron diffraction datasets, aligning with predictive AI solutions for operational efficiency.],
+              [Delivered Rietveld refinement and data processing, feature engineering, and regression-based      parameter optimization, fine-tuning methods, hyperparameter tuning *Goodness of Fit Chi-squared < 1% *  alongside the *Weighted Profile R-factor (R_wp) < 3%*,  to extract structural insights from complex datasets, incorporating Machine Learning frameworks like Scikit-learn for enhanced prediction tasks.],
+              
             )
-          ],
-        ),
-      ),
+          ]
+        )
+      )
+
+
+
+
     ),
     section(
       title: "Journal Publications",

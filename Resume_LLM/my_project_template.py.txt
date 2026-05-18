@@ -1,0 +1,187 @@
+
+python template.py my-project
+--
+#!/usr/bin/env python3
+"""
+template.py
+
+Create a standard Python project structure.
+
+Usage:
+    python template.py project-name
+"""
+
+from pathlib import Path
+import sys
+
+
+FILES = {
+    "README.md": "# {project_name}\n\nMain documentation with quick start guide.\n",
+    "LICENSE": "MIT License\n",
+    "CHANGELOG.md": "# Changelog\n\nAll notable changes to this project will be documented here.\n",
+    "CONTRIBUTING.md": "# Contributing\n\nPlease read these guidelines before contributing.\n",
+    "CODE_OF_CONDUCT.md": "# Code of Conduct\n\nCommunity standards and expectations.\n",
+    "setup.py": """from setuptools import setup, find_packages
+
+setup(
+    name="{project_name}",
+    version="0.1.0",
+    package_dir={{"": "src"}},
+    packages=find_packages(where="src"),
+)
+""",
+    "pyproject.toml": """[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{project_name}"
+version = "0.1.0"
+description = "A Python project"
+readme = "README.md"
+requires-python = ">=3.9"
+""",
+    "poetry.lock": "",
+    ".gitignore": """__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+dist/
+build/
+data/raw/
+data/processed/
+models/trained/
+.ipynb_checkpoints/
+""",
+    ".pre-commit-config.yaml": """repos:
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+""",
+    "Dockerfile": """FROM python:3.11-slim
+
+WORKDIR /app
+COPY . .
+RUN pip install -U pip
+CMD ["python", "--version"]
+""",
+    "docker-compose.yml": """version: '3.9'
+services:
+  app:
+    build: .
+    container_name: {project_name}
+""",
+    "requirements/base.txt": "",
+    "requirements/dev.txt": "-r base.txt\n",
+    "requirements/test.txt": "-r base.txt\npytest\n",
+    "requirements/docs.txt": "-r base.txt\nsphinx\n",
+    ".github/workflows/ci.yml": """name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements/test.txt
+      - run: pytest
+""",
+    ".github/ISSUE_TEMPLATE/bug_report.md": """---
+name: Bug report
+about: Create a report to help us improve
+title: "[BUG] "
+labels: bug
+assignees: ''
+---
+
+Describe the bug.
+""",
+    "src/{package_name}/__init__.py": '__version__ = "0.1.0"\n',
+    "src/{package_name}/cli.py": """def main():
+    print("Hello from CLI")
+
+
+if __name__ == "__main__":
+    main()
+""",
+    "src/{package_name}/config.py": "# Configuration management\n",
+    "src/{package_name}/exceptions.py": "# Custom exceptions\n",
+    "src/{package_name}/logging.py": "# Logging configuration\n",
+    "scripts/setup_environment.sh": "#!/usr/bin/env bash\n\necho \"Setting up environment...\"\n",
+    "scripts/download_datasets.py": 'print("Download datasets here")\n',
+    "tests/conftest.py": "# Pytest configuration\n",
+    "docs/conf.py": "# Sphinx configuration\n",
+    "docs/index.rst": """Welcome to {project_name}'s documentation!
+========================================
+""",
+    "docs/installation.rst": """Installation
+============
+
+Instructions for installing the project.
+""",
+    "data/README.md": "# Data\n\nDocumentation for project data.\n",
+    "models/README.md": "# Models\n\nDocumentation for model artifacts.\n",
+}
+
+DIRECTORIES = [
+    ".github/workflows",
+    ".github/ISSUE_TEMPLATE",
+    "requirements",
+    "src/{package_name}",
+    "src/{package_name}/data",
+    "src/{package_name}/models",
+    "src/{package_name}/utils",
+    "scripts",
+    "notebooks/examples",
+    "tests/integration",
+    "tests/unit",
+    "docs/api",
+    "docs/examples",
+    "docs/_static",
+    "data/raw",
+    "data/processed",
+    "models/trained",
+    "models/pretrained",
+]
+
+
+def create_project(project_name: str) -> None:
+    root = Path(project_name)
+    package_name = project_name.replace("-", "_")
+
+    for directory in DIRECTORIES:
+        path = root / directory.format(package_name=package_name)
+        path.mkdir(parents=True, exist_ok=True)
+
+    for file_path, content in FILES.items():
+        path = root / file_path.format(package_name=package_name)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            content.format(project_name=project_name, package_name=package_name),
+            encoding="utf-8",
+        )
+
+    print(f"Project '{project_name}' created successfully at: {root.resolve()}")
+
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: python template.py <project-name>")
+        sys.exit(1)
+
+    project_name = sys.argv[1].strip()
+    if not project_name:
+        print("Error: project name cannot be empty.")
+        sys.exit(1)
+
+    create_project(project_name)
+
+
+if __name__ == "__main__":
+    main()

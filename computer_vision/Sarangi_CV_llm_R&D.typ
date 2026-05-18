@@ -56,10 +56,10 @@ main: (
           content: [
             *LLM Optimization & Fine-Tuning:* SFT, Instruction Tuning, PEFT (LoRA/QLoRA/DoRA), Knowledge Distillation, DPO, GRPO, RLHF, RLVR, CoT/Prompt Optimization, Quantization (INT4/INT8/FP8, AWQ/GPTQ/GGUF), Speculative Decoding, MoE Routing.\
             *RAG & Multimodal Systems:* Dense/Sparse Retrieval, Vector DBs (Chroma, FAISS, Pinecone), Re-ranking, Vision-Language Models (Qwen-VL, LLaVA), Multimodal Embeddings, Cross-Modal Retrieval, Grounding & Hallucination Detection.\
-            *LLM Serving & Inference:* vLLM,SGLang, (PagedAttention, Prefix Caching, Chunked Prefill, Speculative Decoding, Continuous Batching), TensorRT-LLM, Ollama, llama.cpp, TGI; Structured Outputs/Guided Decoding; OpenAI-Compatible API Design; Adaptive Batching; KV Cache Optimization (FP8).\
+            *LLM Serving & Inference:* vLLM (PagedAttention, Prefix Caching, Chunked Prefill, Continuous Batching), TensorRT-LLM, Ollama, llama.cpp, TGI; Structured Outputs/Guided Decoding; OpenAI-Compatible API Design; Adaptive Batching; KV Cache Optimization (FP8).\
             *MLOps/LLMOps & Infrastructure:* Docker, Kubernetes (K8s), Helm; CI/CD (GitHub Actions, Jenkins); Terraform; MLflow, DVC; Monitoring (Prometheus, Grafana); Feature Stores; A/B Testing; Blue-Green & Canary Deployments.\
             *Cloud Platforms:* AWS (Bedrock, SageMaker, EC2, EKS), Azure AI, GCP Vertex AI; Serverless & Edge Deployment.\
-            *Development & Tooling:* Python,  GitHub, PyTorch, Transformers, Accelerate, Unsloth, Axolotl, DeepSpeed; FastAPI, BentoML; Git, GitHub; Streamlit, Gradio (Prototyping), Snowflake, Huggingface Transformers.\
+            *Development & Tooling:* Python, PyTorch, Transformers, Accelerate, Unsloth, Axolotl, DeepSpeed; FastAPI, BentoML; Git, GitHub; Streamlit, Gradio (Prototyping).\
           ],
         ),
       ),
@@ -67,35 +67,34 @@ main: (
     section(
       title: "Domain Specific Small Language Model Optimization & Deployment",
       content: (
-                   
-        
         subSection(
           title:  "",
           titleEnd: "Capstone Project-1",
-          subTitleEnd: "(April, 2026)",
+          subTitleEnd: "(March, 2026)",
           content: list(
-            [*Production-Grade Vision Language Model (VLM) Training & Serving Platform with RAG Components.*],
-            [Multimodal SLMs for *Computer Vision + NLP Applications, leveraging RAG techniques.*],
-            [Full-stack VLM platform for training/serving small-scale vision-language models, including document chunking and re-ranking.],
-            [Production infrastructure: *vLLM multi-modal serving (Qwen-VL/LLaVA), tensor parallelism, FP8 inference on H100; Docker + K8s orchestration*.],
-            [Key capabilities: Image-text alignment, zero-shot classification, cross-modal retrieval with CLIP-style embeddings; prompt engineering with guardrails.],
+            [*Production-Grade Knowledge Distillation (KD) Pipeline for Small Language Models (SLMs).*],
+            [*Transferred knowledge* from large teacher (Qwen2.5-7B-Instruct) to compact student (Qwen2.5-1.5B-Instruct) model.],
+            [Achieved comparable performance with *~80% reduced inference compute (latency/memory)*.],
+            [Production deployment: *vLLM serving (OpenAI-compatible API), Docker containerization, Streamlit*.],
+            [Key metrics: *Perplexity/BLEU convergence,* TTFT (Time-To-First-Token), throughput vs. baseline teacher.],
           ),
         ),
-
+               
+        
         subSection(
           title:  "",
           titleEnd: "Capstone Project-2",
-          subTitleEnd: "(March, 2026)",
+          subTitleEnd: "(April, 2026)",
           content: list(
-            [*Domain-Specific LLM Optimization & Deployment for Biomedical Signal Intelligence.*],
-            [Fine-tuning techniques (SFT, PEFT, LoRA) for domain-specific LLMs in biomedical signal analysis.],
-            [LLM-based pipelines for ECG signal interpretation, arrhythmia classification, and clinical decision support.],
-            [Deployment on vLLM with Docker/Kubernetes; monitoring and iterative optimization based on real-world feedback.],
+            [*Production-Grade Vision Language Model (VLM) Training & Serving Platform.*],
+            [Multimodal SLMs for *Computer Vision + NLP Applications.*],
+            [Full-stack VLM platform for training/serving small-scale vision-language models.],
+            [Production infrastructure: *vLLM multi-modal serving (Qwen-VL/LLaVA), tensor parallelism, FP8 inference on H100; Docker + K8s orchestration*.],
+            [Key capabilities: Image-text alignment, zero-shot classification, cross-modal retrieval with CLIP-style embeddings.],
           ),
         ),
       ),
     ),
-
     section(
       title: "Work Experience",
       content: (
@@ -189,7 +188,7 @@ main: (
           content: list(
             [*Generative AI with Large Language Models (LLMs)*],
             [DeepLearning.AI & Amazon Web Services | Coursera | February 2026],
-            [Skills: NLP, Transformers Architecture · PyTorch · PEFT · Fine-tuning · LoRA · QLoRa · Knowledge Distillation · RL models  RAG · LangChain · LangGraph · Deployment · Ollama, vLLM · OpenWebUI · FastAPI · Streamlit  · HuggingFace],
+            [Skills: NLP, Transformers Architecture ( FLAN-T5, BERT, GPT, DeepSeek, Qwen, Phi-2, Gemma) · RL models · PyTorch · PEFT · Fine-tuning · LoRA · QLoRa · Knowledge Distillation · RAG · LangChain · LangGraph · Deployment · Ollama, vLLM, OpenWebUI, FastAPI, Streamlit , RunPOD, LightningAI, vLLM, HuggingFace, Optuna],
                       
             [*Machine Learning Specialization* | August 2025],
             [*Deep Learning and NLP Specialization* | January 2026],
